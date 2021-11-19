@@ -1,0 +1,78 @@
+.button-container {
+  // @include flexCenter();
+  display: flex;
+  justify-content: flex-start;
+
+  min-width: 1000px;
+
+  // a {
+  //   position: relative;
+  //   display: inline-block;
+  //   padding: 15px 30px;
+  //   border: 2px solid $leftBtn;
+  //   margin: 4rem auto;
+
+  //   text-transform: uppercase;
+  //   font-weight: 600;
+  //   letter-spacing: 2px;
+  //   color: #fff;
+  //   -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+  //   transition: 0.5s;
+  //   text-decoration: none;
+  // }
+
+  // a:hover {
+  //   color: black;
+  //   box-shadow: 0 0 10px $leftBtn, 0 0 20px $leftBtn, 0 0 40px $leftBtn,
+  //     0 0 80px $leftBtn, 0 0 160px $leftBtn;
+  //   transition-delay: 1.3s;
+  // }
+  // a span {
+  //   position: relative;
+  //   z-index: 30;
+  // }
+  // a:nth-child(2) {
+  //   filter: hue-rotate(240deg);
+  // }
+  // a:before {
+  //   content: "";
+  //   position: absolute;
+  //   left: -20px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   width: 20px;
+  //   height: 2px;
+  //   background: $leftBtn;
+  //   box-shadow: 5px -8px 0 $leftBtn, 5px 8px 0 $leftBtn;
+  //   transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  //   transition-delay: 0.3s, 0.3s, 0s, 0s;
+  // }
+  // a:hover::before {
+  //   width: 60%;
+  //   height: 100%;
+  //   left: -2px;
+  //   box-shadow: 5px 0 0 $leftBtn, 5px 0 0 $leftBtn;
+  //   transition-delay: 0s, 0.3s, 1s, 0.5s;
+  // }
+
+  // a:after {
+  //   content: "";
+  //   position: absolute;
+  //   right: -20px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   width: 20px;
+  //   height: 2px;
+  //   background: $leftBtn;
+  //   box-shadow: -5px -8px 0 $leftBtn, -5px 8px 0 $leftBtn;
+  //   transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  //   transition-delay: 0.3s, 0.3s, 0s, 0s;
+  // }
+  // a:hover::after {
+  //   width: 60%;
+  //   height: 100%;
+  //   right: -2px;
+  //   box-shadow: -5px 0 0 $leftBtn, -5px 0 0 $leftBtn;
+  //   transition-delay: 0s, 0.3s, 1s, 0.5s;
+  // }
+}

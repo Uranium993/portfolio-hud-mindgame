@@ -1,0 +1,127 @@
+.showcase {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(77, 74, 74);
+  transition: 0.5s;
+
+  .custom {
+    position: absolute;
+    width: 200px;
+    z-index: 20;
+    color: white;
+  }
+
+  .text {
+    padding: 8rem;
+    position: relative;
+
+    .title {
+      font-family: "Source Code Pro", monospace;
+      color: $title;
+      background: $background1;
+      animation: fadeIn 1s ease;
+      font-size: 1.5em;
+      margin-bottom: 5rem;
+
+      h1 {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+
+    // .title.active {
+    //   color: white;
+    // }
+
+    .subtitle1 {
+      position: relative;
+      //left: 0;
+      // top: 20rem;
+      color: $leftBtn;
+      filter: hue-rotate(240deg);
+    }
+    .subtitle2 {
+      position: relative;
+      //right: 0;
+      // top: 25rem;
+      color: $leftBtn;
+    }
+    .subtitle3 {
+      position: relative;
+      //top: 30rem;
+      color: white;
+    }
+
+    text-align: center;
+    margin: 3rem 0;
+    z-index: 0;
+  }
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+h1::before {
+  background-color: $background1;
+  animation: typewriter $typeSpeed steps(17) 2.5s forwards;
+}
+
+h1:after {
+  width: 0.125em;
+  height: 80%;
+  background: rgb(243, 243, 243);
+  top: 0.4rem;
+  animation: typewriter $typeSpeed steps(17) 2.5s forwards,
+    blink 750ms steps(24) infinite;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f4115;
+  mix-blend-mode: overlay;
+}
+
+.audio-controls {
+  background-color: rgb(124, 185, 201);
+  position: absolute;
+  height: 82px;
+  width: 300px;
+  z-index: 9;
+  text-align: center;
+  border-radius: 70%;
+}
+
+#draggable-header {
+  padding: 5px;
+  cursor: move;
+  z-index: 9;
+  color: #fff;
+}
+
+#controlBar {
+  background-color: transparent;
+}

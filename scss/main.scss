@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fauna+One&family=Orbitron:wght@200&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap");
+body {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+  font-family: "Fauna One", serif;
+  overflow: hidden;
+}
+
+@import "./helpers";
+@import "./showcase";
+@import "./buttons";
+@import "./intro";
+
+// .button-container {
+//   @include flexCenter();
+// }

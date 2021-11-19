@@ -1,0 +1,60 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$leftBtn: rgb(250, 102, 102);
+$title: #3ce5ca;
+$background1: #0c1812;
+$doorColor: #1f2933;
+//$doorBorderColor: hsl(317 100% 54%);
+$doorBorderColor: #3ce5ca;
+$typeSpeed: 2s;
+$doorSpeed: 3s;
+
+user-card {
+  --button-color1: rgb(66, 108, 223);
+
+  --button-color: rgb(250, 102, 102);
+}
+
+@keyframes typewriter {
+  to {
+    left: 99%;
+  }
+}
+
+//BLINKER TYPER
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+//INTRO CONSOLE MESSAGE ANIME
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 50px;
+  }
+}
+
+//INTRO DOOR KEYFRAMES
+
+@keyframes doorsOpenUp {
+  to {
+    top: -140%;
+  }
+}
+@keyframes doorsOpenDown {
+  to {
+    top: -140%;
+  }
+}

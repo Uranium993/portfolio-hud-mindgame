@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fauna+One&family=Orbitron:wght@200&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap");
+body {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+  font-family: "Fauna One", serif;
+  overflow: hidden;
+}
+
+user-card {
+  --button-color1: rgb(66, 108, 223);
+  --button-color: rgb(250, 102, 102);
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 99%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 99%;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 50px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 50px;
+  }
+}
+@-webkit-keyframes doorsOpenUp {
+  to {
+    top: -140%;
+  }
+}
+@keyframes doorsOpenUp {
+  to {
+    top: -140%;
+  }
+}
+@-webkit-keyframes doorsOpenDown {
+  to {
+    top: -140%;
+  }
+}
+@keyframes doorsOpenDown {
+  to {
+    top: -140%;
+  }
+}
+.showcase {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #4d4a4a;
+  transition: 0.5s;
+}
+.showcase .custom {
+  position: absolute;
+  width: 200px;
+  z-index: 20;
+  color: white;
+}
+.showcase .text {
+  padding: 8rem;
+  position: relative;
+  text-align: center;
+  margin: 3rem 0;
+  z-index: 0;
+}
+.showcase .text .title {
+  font-family: "Source Code Pro", monospace;
+  color: #3ce5ca;
+  background: #0c1812;
+  -webkit-animation: fadeIn 1s ease;
+          animation: fadeIn 1s ease;
+  font-size: 1.5em;
+  margin-bottom: 5rem;
+}
+.showcase .text .title h1 {
+  display: inline-block;
+  margin: 0;
+}
+.showcase .text .subtitle1 {
+  position: relative;
+  color: #fa6666;
+  filter: hue-rotate(240deg);
+}
+.showcase .text .subtitle2 {
+  position: relative;
+  color: #fa6666;
+}
+.showcase .text .subtitle3 {
+  position: relative;
+  color: white;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background-color: #0c1812;
+  -webkit-animation: typewriter 2s steps(17) 2.5s forwards;
+          animation: typewriter 2s steps(17) 2.5s forwards;
+}
+
+h1:after {
+  width: 0.125em;
+  height: 80%;
+  background: #f3f3f3;
+  top: 0.4rem;
+  -webkit-animation: typewriter 2s steps(17) 2.5s forwards, blink 750ms steps(24) infinite;
+          animation: typewriter 2s steps(17) 2.5s forwards, blink 750ms steps(24) infinite;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f4115;
+  mix-blend-mode: overlay;
+}
+
+.audio-controls {
+  background-color: #7cb9c9;
+  position: absolute;
+  height: 82px;
+  width: 300px;
+  z-index: 9;
+  text-align: center;
+  border-radius: 70%;
+}
+
+#draggable-header {
+  padding: 5px;
+  cursor: move;
+  z-index: 9;
+  color: #fff;
+}
+
+#controlBar {
+  background-color: transparent;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 1000px;
+}
+
+.door-one {
+  position: absolute;
+  background-color: #1f2933;
+  height: 46vh;
+  width: 120%;
+  border-bottom: 0.1em solid #3ce5ca;
+  z-index: 31;
+  box-shadow: 0 0 0.5em 0 #3ce5ca, inset 0 -1em 1em -1em #3ce5ca;
+}
+
+.door-two {
+  position: absolute;
+  background-color: #1f2933;
+  height: 120vh;
+  bottom: -100rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  width: 120%;
+  border-top: #3ce5ca 0.125em solid;
+  border-top: 0.1em solid #3ce5ca;
+  z-index: 30;
+  transform: skewY(30deg);
+  box-shadow: 0 0 0.5em 0 #3ce5ca, inset 0 1em 1em -1em #3ce5ca;
+  z-index: 40;
+}
+
+.door-three {
+  position: absolute;
+  background-color: #1f2933;
+  height: 120vh;
+  bottom: -100rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 120%;
+  border-top: #3ce5ca 0.125em solid;
+  border-top: 0.1em solid #3ce5ca;
+  z-index: 40;
+  transform: skewY(-30deg);
+  box-shadow: 0 0 0.5em 0 #3ce5ca, inset 0 1em 1em -1em #3ce5ca;
+}/*# sourceMappingURL=main.css.map */

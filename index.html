@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss//main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="doors">
+      <div id="doorOne" class="door-one"></div>
+      <div id="doorTwo" class="door-two"></div>
+      <div id="doorThree" class="door-three"></div>
+    </div>
+    <div class="showcase">
+      <video
+        loop
+        autoplay
+        muted
+        type="video/mp4"
+        src="/assets/Tunnel - 84938.mp4"
+      ></video>
+      <div class="overlay"></div>
+
+      <div class="text">
+        <div id="titleID" class="title" style="display: inline-block">
+          <h1 style="position: relative">Hello Stranger.</h1>
+        </div>
+        <!-- <button id="showBtn">SHOW</button> -->
+
+        <div class="options">
+          <div class="subtitle1">
+            <h2>If it is the knowledge you seek, take the blue pill.</h2>
+          </div>
+          <div class="subtitle2">
+            <h2>If it is the truth you seek, take the red pill.</h2>
+          </div>
+        </div>
+
+        <div class="subtitle3">
+          <h3>
+            But do be careful, for the red one takes more than a mouth to
+            swallow...
+          </h3>
+        </div>
+      </div>
+
+      <user-card name="choose-button" id="red-pill" class="button-container"
+        >Take The Red Pill</user-card
+      >
+      <user-card name="choose-button1" id="blue-pill" class="button-container"
+        >Take The Blue Pill</user-card
+      >
+
+      <div class="button-container">
+        <a href="#"><span>Take the Red Pill</span></a>
+        <a href="#"><span>Take the Blue Pill</span></a>
+      </div>
+    </div>
+    <!-- <div id="draggable" class="audio-controls">
+      <div id="draggable-header">drag me around</div>
+      <audio src="/assets//faith2.mp3" loop controls type="audio/mp3"></audio>
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="./components/UserCard.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
