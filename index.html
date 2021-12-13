@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss//main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -19,50 +24,73 @@
         autoplay
         muted
         type="video/mp4"
-        src="/assets/Tunnel - 84938.mp4"
+        src="/assets/wormhole.mp4"
       ></video>
       <div class="overlay"></div>
 
-      <div class="text">
-        <div id="titleID" class="title" style="display: inline-block">
-          <h1 style="position: relative">Hello Stranger.</h1>
-        </div>
-        <!-- <button id="showBtn">SHOW</button> -->
+      <!--------------------------- TERMINAL ------------------------------------>
 
-        <div class="options">
+      <div class="text">
+        <div class="left-stick"></div>
+        <div class="right-stick"></div>
+        <div id="titleID" class="title">
+          <div class="terminal-top">
+            <div class="main-bash">
+              <div class="top-bar-text">Main - bash</div>
+            </div>
+            <div class="rest-space-top-bar">|</div>
+          </div>
+          <h1>
+            <span class="hi">></span>
+            <span class="box"></span>
+            <span class="changing-text"></span>
+            <span class="cursor">|</span>
+          </h1>
+        </div>
+
+        <div class="next-btn">
+          <i class="fas fa-angle-double-down fa-3x"></i>
+          <div id="next-btn-wrapper" class="next-btn-wrapper">
+            <span class="span-top turn-off first"></span>
+            <span class="span-bottom turn-off second"></span>
+            <span class="span-left turn-off third"></span>
+            <span class="span-right turn-off fourth"></span>
+            <h3>Spare me the bull**** and show me some code!</h3>
+          </div>
+        </div>
+
+        <!--------------------------- OPTION QUESTIONS ------------------------------------>
+
+        <!-- <div class="options">
           <div class="subtitle1">
             <h2>If it is the knowledge you seek, take the blue pill.</h2>
           </div>
           <div class="subtitle2">
             <h2>If it is the truth you seek, take the red pill.</h2>
           </div>
-        </div>
-
-        <div class="subtitle3">
-          <h3>
-            But do be careful, for the red one takes more than a mouth to
-            swallow...
-          </h3>
-        </div>
+          <div class="subtitle3">
+            <h3>
+              But do be careful, for the red one takes more than a mouth to
+              swallow...
+            </h3>
+          </div>
+        </div> -->
       </div>
-
-      <user-card name="choose-button" id="red-pill" class="button-container"
-        >Take The Red Pill</user-card
-      >
-      <user-card name="choose-button1" id="blue-pill" class="button-container"
+      <user-card name="choose-button" id="blue-pill" class="button-container"
         >Take The Blue Pill</user-card
       >
-
-      <div class="button-container">
-        <a href="#"><span>Take the Red Pill</span></a>
-        <a href="#"><span>Take the Blue Pill</span></a>
-      </div>
+      <user-card name="choose-button1" id="red-pill" class="button-container"
+        >Take The Red Pill</user-card
+      >
     </div>
+
     <!-- <div id="draggable" class="audio-controls">
       <div id="draggable-header">drag me around</div>
       <audio src="/assets//faith2.mp3" loop controls type="audio/mp3"></audio>
     </div> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/EasePack.min.js"></script>
     <script src="./components/UserCard.js"></script>
 
     <script src="./app.js"></script>

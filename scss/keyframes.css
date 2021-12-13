@@ -1,0 +1,72 @@
+@-webkit-keyframes typewriter {
+  to {
+    left: 99%;
+    margin: 0 -35px 0 35px;
+  }
+}
+@keyframes typewriter {
+  to {
+    left: 99%;
+    margin: 0 -35px 0 35px;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@-webkit-keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 50px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 50px;
+  }
+}
+@-webkit-keyframes doorsOpenUp {
+  to {
+    top: -140%;
+  }
+}
+@keyframes doorsOpenUp {
+  to {
+    top: -140%;
+  }
+}
+@-webkit-keyframes doorsOpenDown {
+  to {
+    top: -140%;
+  }
+}
+@keyframes doorsOpenDown {
+  to {
+    top: -140%;
+  }
+}/*# sourceMappingURL=keyframes.css.map */

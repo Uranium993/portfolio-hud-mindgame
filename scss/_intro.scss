@@ -1,17 +1,10 @@
-// .doors {
-//   position: relative;
-//   height: 100vh;
-//   width: 100vw;
-//   background: transparent;
-// }
-
 .door-one {
   position: absolute;
   background-color: $doorColor;
   height: 46vh;
   width: 120%;
   border-bottom: 0.1em solid $doorBorderColor;
-  z-index: 31;
+  z-index: 1;
   //animation: doorsOpenUp $doorSpeed ease-in-out forwards;
   //   transform: skewY(30deg);
   box-shadow: 0 0 0.5em 0 $doorBorderColor,
@@ -20,12 +13,14 @@
 
 .door-two {
   position: absolute;
+  //   background: url("../assets/TexturesCom_MetalScratches0090_1_M.jpg");
+
+  //   background-size: 100% 500px;
+
   background-color: $doorColor;
-  height: 120vh;
+  // background-color: rgba($color: #284939, $alpha: 0.3);
   bottom: -100rem;
   display: flex;
-  justify-content: end;
-  align-items: flex-start;
 
   width: 120%;
   border-top: $doorBorderColor 0.125em solid;
@@ -35,17 +30,14 @@
   transform: skewY(30deg);
   box-shadow: 0 0 0.5em 0 $doorBorderColor,
     inset 0 1em 1em -1em $doorBorderColor;
-  z-index: 40;
+  z-index: 30;
 }
 
 .door-three {
   position: absolute;
   background-color: $doorColor;
-  height: 120vh;
   bottom: -100rem;
   display: flex;
-  justify-content: start;
-  align-items: start;
 
   width: 120%;
   border-top: $doorBorderColor 0.125em solid;

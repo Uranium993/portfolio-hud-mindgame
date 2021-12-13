@@ -1,0 +1,121 @@
+.text {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .title.active {
+    color: white;
+  }
+
+  .subtitle1 {
+    position: relative;
+    //left: 0;
+    // top: 20rem;
+    color: $button-color;
+  }
+
+  .subtitle2 {
+    position: relative;
+    //right: 0;
+    // top: 25rem;
+    color: $button-color1;
+  }
+
+  .subtitle3 {
+    position: relative;
+    color: white;
+  }
+}
+
+.title {
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  color: $title;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  width: 700px;
+  height: 10rem;
+  //border: 1px solid $title;
+  border: 2px solid $terminalBorder;
+  border-radius: 100px;
+  box-shadow: 0 -7px 1px 5px rgba($color: #000000, $alpha: 0.8);
+  z-index: 1;
+
+  .terminal-top {
+    //background: $background1;
+    width: 90%;
+    transform: translateX(2.6rem);
+    // border-bottom: 1px solid $title;
+
+    .main-bash {
+      display: inline-block;
+      height: 100%;
+      width: 8rem;
+      padding-left: 2.2rem;
+      border-right: 3px solid $terminalBorder;
+      transform: skew(30deg) translateX(0.35rem);
+
+      .top-bar-text {
+        transform: skew(-30deg);
+      }
+    }
+    .rest-space-top-bar {
+      color: $background1;
+      display: inline-block;
+      width: calc(100% - 10.99rem);
+      border-bottom: 2px solid $terminalBorder;
+    }
+  }
+
+  //--------------for gsap animation--------------//
+
+  h1 {
+    position: relative;
+    font-size: 1.5em;
+    margin-top: 2.5rem;
+    margin-left: 3.5vw;
+    overflow: hidden;
+    min-width: 100%;
+
+    .changing-text {
+      // font-family: "Source Code Pro", sans-serif;
+      font-weight: bold;
+      // padding-right: 1.2vw;
+    }
+  }
+
+  h1 .box {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    background: #2800ad;
+    height: 1vw;
+    z-index: -1;
+  }
+}
+
+.title:before {
+  content: "";
+  position: absolute;
+  left: 5rem;
+  top: -13rem;
+  height: 200px;
+  width: 30px;
+  background: linear-gradient(90deg, #121313, #ebf8e1, #0f0f0f, #7c7879);
+  z-index: -1;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  right: 5rem;
+  top: -13rem;
+  height: 200px;
+  width: 30px;
+  background: black;
+  background: linear-gradient(90deg, #7c7879, #121313, #ebf8e1, #0f0f0f);
+  z-index: -1;
+}

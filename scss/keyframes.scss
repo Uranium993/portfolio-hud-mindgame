@@ -1,0 +1,48 @@
+@keyframes typewriter {
+  to {
+    left: 99%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+//BLINKER TYPER
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+// slider
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+//INTRO CONSOLE MESSAGE ANIME
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 50px;
+  }
+}
+
+//INTRO DOOR KEYFRAMES
+
+@keyframes doorsOpenUp {
+  to {
+    top: -140%;
+  }
+}
+
+@keyframes doorsOpenDown {
+  to {
+    top: -140%;
+  }
+}

@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fauna+One&family=Orbitron:wght@200&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap");
+
+//Ubuntu terminal testing
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
 body {
   position: relative;
   margin: 0 auto;
@@ -13,9 +18,12 @@ body {
 
 @import "./helpers";
 @import "./showcase";
+@import "./sticks";
+@import "./next";
+@import "./typewriting";
+
 @import "./buttons";
 @import "./intro";
-
-// .button-container {
+@import "./keyframes.scss"; // .button-container {
 //   @include flexCenter();
 // }
